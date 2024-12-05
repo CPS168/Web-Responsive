@@ -1,0 +1,52 @@
+body{
+   display: flex;
+   flex-direction: column;
+   gap: 10px; 
+}
+
+header, main, aside, footer{
+    padding: 10px 20px;
+}
+
+header, footer{
+    background-color: black;
+    color: white;
+}
+
+main, aside{
+    color: black;
+    flex: 1;
+}
+
+main{
+    background-color: rgb(244, 242, 242);
+}
+
+aside{
+    background-color: rgb(209, 205, 205);
+}
+
+section{
+    padding-inline: 10px;
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+}
+
+@media(min-width: 600px) and (max-width: 900px){
+    section{
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 900px){
+    section{
+        flex-direction: row;
+    }
+    main{
+        flex: 2;
+    }
+    aside{
+        flex: 1;
+    }
+}
